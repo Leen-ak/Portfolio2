@@ -46,6 +46,8 @@
     <div class="typing-effect">
         <h1 id="typing-text"></h1>
     </div>
+
+
     <div class="aboutMe-container">
         <div class="image-section">
             <img src="../Images/me.jpg">
@@ -53,7 +55,7 @@
 
         <div class="form-container">
             <div class="hide">
-                <h2>About Me</h2>
+                <h2>About Me</h2>        
                 <div class="info-section">
                     <div class="aboutMe-child-2">
                         <p>
@@ -158,22 +160,330 @@
         </div>
     </div>
 
-    <script>
-        const text = "Software Developer"; 
-        let index = 0;
-        const speed = 150; 
-        
-        function type() {
-            if (index < text.length) {
-                document.getElementById("typing-text").innerHTML = 
-                    text.substring(0, index + 1) + '<span class="cursor">|</span>'; 
-                index++;
-                setTimeout(type, speed);
-            } else {
-                document.getElementById("typing-text").innerHTML = text + '<span class="cursor">|</span>'; 
-            }
-        }
-        type(); 
-    </script>
+     <div class="skills" id="skills-section">
+                <h2 id="skill-section">My Skills</h2>
+                <div class="skills-images">
+                    <div class="skill-item">
+                        <div class="circle c-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="60, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/c++.jpg" alt="C++ logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle java-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="80, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/java.jpg" alt="java logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle html-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="60, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/html.jpg" alt="HTML logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle css-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="60, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/css.jpg" alt="CSS logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle sql-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="60, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/sql.jpg" alt="SQL logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle unity-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="50, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/unity.jpg" alt="unity logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle js-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="20, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/js.jpg" alt="java script logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle c2-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="50, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/c-sharp.png" alt="C-sharp logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle net-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="80, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/net.png" alt="java logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle jQuery-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="80, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/jQuery.png" alt="java logo">
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="circle react-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="80, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/react.png" alt="java logo">
+                        </div>
+                    </div>
+
+                      <div class="skill-item">
+                        <div class="circle bootstrap-percent">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <!--Background circle path-->
+                                <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+
+                                <path class="circle"
+                                stroke-dasharray="80, 100"
+                                d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                            </svg>
+                                <img src="../Images/bootstrap.png" alt="java logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects" id="projects-section">    
+                <h2 id="project">My Projects</h2>
+                <div class="project-bar">   
+                    <ul class="button-list">
+                        <li><button onclick="filterProjects('all')" class="project-button">ALL</button></li>
+                        <li><button onclick="filterProjects('C++')" class="project-button">C++</button></li>
+                        <li><button onclick="filterProjects('java')" class="project-button">JAVA</button></li>
+                        <li><button onclick="filterProjects('web')" class="project-button">WEB</button></li>
+                        <li><button onclick="filterProjects('unity')" class="project-button">UNITY</button></li>
+                    </ul>
+                </div>
+                    <div class="project-grid">
+                        <div class="project-item web">
+                            <a href="ChessProject.html" target="_self">
+                            <img class="project-icon" src="../Images/chess.png"  alt="chess logo neon">
+                            </a>
+                            <p> Chess Game </p>
+                        </div>
+    
+                        <div class="project-item web">
+                            <a href="TringleProject.html" target="_self">
+                            <img class="project-icon" src="../Images/movie.jpg" alt="Movie logo neon">
+                            </a>
+                            <p> Movies Database </p>
+                        </div>
+
+                        <div class="project-item C++">
+                            <a href="ee.html" target="_self">
+                            <img class="project-icon" src="../Images/ee.jpg"  alt="chess logo neon">
+                            </a>
+                            <p>Expression Evaluator</p>
+                        </div>
+    
+                        <div class="project-item C++">
+                            <a href="Calender.html" target="_self">
+                            <img class="project-icon" src="../Images/calender.jpg"  alt="chess logo neon">
+                            </a>
+                            <p>Calendar Conversion</p>
+                        </div>
+    
+                        <div class="project-item web">
+                            <a href="Leenportfolio.html" target="_self">
+                            <img class="project-icon" src="../Images/web.jpg"  alt="website logo neon">
+                            </a>
+                            <p> Leen's Portfolio </p>
+                        </div>
+                                
+                        <div class="project-item C++">
+                            <a href="TicTacToeGame.html" target="_self">
+                            <img class="project-icon" src="../Images/TicTacToe.jpg" alt="Tic Tac Toe neon image">
+                            </a>   
+                            <p> Tic Tac Toe Game </p>
+                        </div>
+    
+                        <div class="project-item java">
+                            <a href="studentProgram.html" target="_self">
+                            <img class="project-icon" src="../Images/student.jpg" alt="student logo neon">
+                            </a>
+                            <p> Student Program </p>
+                        </div>
+    
+                        <div class="project-item C++">
+                            <a href="NewcombBenfird.html" target="_self">
+                            <img class="project-icon" src="../Images/statistics.jpg" alt="statistics logo neon">
+                            </a>
+                            <p> Newcomb-Benford Stats </p>
+                        </div>
+
+                        <div class="project-item unity">
+                            <a href="MartionGame.html" target="_self">
+                            <img class="project-icon" src="../Images/space.jpg" alt="space logo neon">
+                            </a>
+                            <p> Martion MoonScape Game </p>
+                        </div>
+                    </div>
+                </div>
+    <script src="../JS/Title.js"></script>
+    <script src="../JS/Skills.js"></script>
+    <script src="../JS/Project.js"></script>
+    <script src="../JS/Experience.js"></script>
 </body>
 </html>
