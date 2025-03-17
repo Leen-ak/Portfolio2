@@ -66,18 +66,6 @@ a{
     flex: 1;
     justify-content: center;
     align-items: center;
-    animation: spin 2.4s linear;
-}
-
-@keyframes spin{
-    0% {
-        transform: scale(0) rotate(0deg);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1) rotate(360deg);
-        opacity: 1;
-    }
 }
 
 .aboutMe-container{
