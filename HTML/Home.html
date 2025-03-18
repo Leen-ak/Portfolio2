@@ -18,14 +18,14 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar mx-3" href="#" id="title-bar">Leen Aboukhalil</a>
+        <a class="navbar mx-3" href="Home.html" id="title-bar">Leen Aboukhalil</a>
         <button class="navbar-toggler mx-5" type="button" data-bs-toggle="collapse" data-bs-targer="#navbarContent">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mx-5">
                 <li class="navbar-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="Home.html">Home</a>
                 </li>
                 <li class="navbar-item">
                     <a class="nav-link" href="#">About Me</a>
@@ -46,7 +46,6 @@
     <div class="typing-effect">
         <h1 id="typing-text"></h1>
     </div>
-
 
     <div class="aboutMe-container">
         <div class="image-section">
@@ -418,7 +417,7 @@
                 </div>
                     <div class="project-grid">
                         <div class="project-item web">
-                            <a href="ChessProject.html" target="_self">
+                            <a href="Chess.html" target="_self">
                             <img class="project-icon" src="../Images/chess.png"  alt="chess logo neon">
                             </a>
                             <p> Chess Game </p>
@@ -485,5 +484,16 @@
     <script src="../JS/Skills.js"></script>
     <script src="../JS/Project.js"></script>
     <script src="../JS/Experience.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar-expand-md");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+        
+    </script>
 </body>
 </html>

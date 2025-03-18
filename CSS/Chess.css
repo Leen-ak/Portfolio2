@@ -1,38 +1,84 @@
-/* Background Styling */
 body {
-    background-image: url(../Images/a.jpg);
+    background-color: rgba(13, 31, 61, 0.9); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
-    font-family: Arial, sans-serif;
+    color: #f0ebd8;
+    font-family: 'Abel', sans-serif;
 }
 
-/* Background Overlay */
+.navbar-expand-md {
+    background-color: rgba(13, 31, 61, 0.9); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#title-bar{
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+#title-bar:hover{
+    color: #40c9ff;
+}
+
+.navbar-item{
+    color: white;
+    font-size: 26px;
+    padding-right: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;   
+    padding-right: 18px;
+}
+
+a.nav-link{
+    color: white;
+}
+
 .background-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark Transparent Layer */
+    background-color: rgba(13, 31, 61, 0.9); 
     z-index: -1;
 }
 
-/* Project Container */
 .wrap {
-    width: 85%;
-    max-width: 70%;
-    background-color: rgba(13, 31, 61, 0.9); /* Dark blue with transparency */
+    width: 80%;
+    background-color: #748cab; 
     border-radius: 15px;
-    padding: 30px;
+    padding: 40px;
     margin: 50px auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
-/* Two-Column Layout */
+#chess-title {
+    font-size: 45px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-shadow: 0px 3px 7px #af93cf;
+}
+
+.cursor {
+    display: inline;
+    color: #FFD700; 
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; } 
+}
+
+
 .project-layout {
     display: flex;
     flex-direction: row;
@@ -41,7 +87,6 @@ body {
     gap: 30px;
 }
 
-/* Left Side: Technology Logos */
 .tech-logos {
     display: flex;
     flex-direction: column;
@@ -50,29 +95,25 @@ body {
 }
 
 .tech-logos img {
-    width: 80px; /* Adjust the size of logos */
+    width: 80px; 
     margin: 10px;
 }
 
-/* Hover Effect */
 .tech-logos img:hover {
     filter: grayscale(0%);
     transform: scale(1.1);
 }
 
-/* Right Side: Project Details */
 .project-content {
     text-align: left;
     width: 70%;
 }
 
-/* Headings */
 .project-content h2 {
-    color: #FFD700; /* Gold color for sections */
+    color: #40c9ff; 
     margin-top: 20px;
 }
 
-/* Features List */
 .project-content ul {
     list-style-type: none;
     padding: 0;
@@ -83,9 +124,8 @@ body {
     font-size: 18px;
 }
 
-/* Links */
 .project-content a {
-    color: #FFD700;
+    color: #40c9ff;
     font-weight: bold;
     text-decoration: none;
 }
@@ -94,26 +134,3 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive for Mobile */
-@media (max-width: 768px) {
-    .project-layout {
-        flex-direction: column; /* Stack content vertically */
-        text-align: center;
-    }
-
-    .tech-logos {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .tech-logos img {
-        width: 60px;
-        margin: 5px;
-    }
-
-    .project-content {
-        width: 100%;
-        text-align: center;
-    }
-}
