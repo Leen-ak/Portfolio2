@@ -1,8 +1,11 @@
 body {
     font-family: 'Abel', sans-serif;
-    background-color: #0d1f3d;
+    background-color: #1d3557; 
     color: #ffffff;
 }
+
+html {
+    scroll-behavior: smooth; 
 
 .navbar-expand-md {
     background-color: #0d1f3d;
@@ -78,12 +81,91 @@ a{
     text-align: center;
     justify-content: space-between;
     width: 72%;
-    height: auto;
+    height: 72%;
     overflow: hidden;
-    box-shadow: 2px 4px 10px #0f1316;
-
+    box-shadow: 2px 4px 10px #0d1f3d;
+    background-color: #0d1f3d;
 }
 
+/* Button */
+.button-container button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #af68b0;
+    width: 32%;
+    padding: 2%;
+    display: inline-block;
+    margin: 2% 4%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: #af68b0;
+    box-shadow: 0 0 30px 5px #af93cf;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #40c9ff;
+    box-shadow: 0 0 50px 30px #af93cf;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+/* Card */
 .form-container{
     display: flex;
     flex-direction: column;
@@ -91,8 +173,9 @@ a{
     justify-content: center;
     margin: 0%;
     width: 50%;
-    padding: 5%;
+    padding: 8% 4%;
 }
+
 .info-section{
     display: flex;
     flex-direction: column;
@@ -360,7 +443,7 @@ h2{
     stroke-dasharray: 100 100;
 }
 .circular-chart .circle{
-    stroke:#7b5492;
+    stroke:#597294;
 }
 .animate.c-percent .circle {
     stroke-dasharray: 80 100;
@@ -457,7 +540,7 @@ h2{
 .project-item{
     background-color: transparent;
     text-align: center;
-    box-shadow: 0 8px 14px black;
+    box-shadow: 0 8px 14px #0d1f3d;
 }
 .project-item p{
     font-size: 28px;
@@ -486,7 +569,7 @@ h2{
 .project-item{
     opacity: 0;
     transform: translateY(50px);
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .project-item:nth-child(3n + 1) { 
@@ -505,4 +588,77 @@ h2{
     opacity: 1;
     transform: translateX(0) translateY(0);
 }
+
+/*footer */
+.container{
+    padding: 1% 2%;
+}
+.custom-footer {
+    background: #0d1f3d;
+    box-shadow: 0px 0px 5px #09101d;
+    color: #b0b0b0;
+    padding: 20px 0;
+    margin-top: 5%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-left {
+    border-right: 1px solid #444; /* Add vertical separator */
+    padding-right: 20px;
+}
+
+.footer-header {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-nav a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+.copyright-text {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.footer-logo img {
+    width: 70%;
+    transition: transform 0.3s;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1);
+}
+
+.support-text {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
 
