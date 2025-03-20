@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(13, 31, 61, 0.9); 
+    background-color: rgba(133, 192, 189, 0.9); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ a.nav-link{
 
 .wrap {
     width: 80%;
-    background-color: #748cab; 
+    background-color: rgba(13, 31, 61, 0.9); 
     border-radius: 15px;
     padding: 40px;
     margin: 50px auto;
@@ -131,6 +131,14 @@ a.nav-link{
 }
 
 .project-content a:hover {
-    text-decoration: underline;
+    color:#40c9ff;
 }
 
+.live a{
+color: #FFD700;
+padding: 0%;
+}
+
+.java img, .unity img{
+    border-radius: 25%;
+}
