@@ -26,34 +26,29 @@
                     <a class="nav-link" href="Home.html">Home</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="nav-link" href="#">About Me</a>
+                    <a class="nav-link" href="#aboutMe-container">About Me</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="nav-link" href="#">My Skills</a>
+                    <a class="nav-link" href="#skills-section">My Skills</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="nav-link" href="#">My Projects</a>
+                    <a class="nav-link" href="#projects-section">My Projects</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="nav-link" href="#">Contact Me</a>
+                    <a class="nav-link" href="#footer">Contact Me</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Background Overlay -->
-    <div class="background-overlay"></div>
 
-    <!-- Project Container -->
+    <div class="background-overlay"></div>
     <div class="wrap">
         <h1 id="expression-title"></h1>
 
         <div class="project-layout">
-            <!-- Programming Language Logos (Left Side) -->
             <div class="tech-logos">
                 <img src="../Images/c++.png" alt="C++ Logo">
             </div>
-
-            <!-- Project Description (Right Side) -->
             <div class="project-content">
                 <h2>Overview</h2>
                 <p>
@@ -87,9 +82,9 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const text = "Expression Evaluator"; // Typing effect text
+            const text = "Expression Evaluator";
             let index = 0;
-            const speed = 150; // Typing speed in milliseconds
+            const speed = 150; 
         
             function typeEffect() {
                 if (index < text.length) {

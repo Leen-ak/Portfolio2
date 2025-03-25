@@ -6,6 +6,7 @@ body {
 
 html {
     scroll-behavior: smooth; 
+}
 
 .navbar-expand-md {
     background-color: #0d1f3d;
@@ -16,20 +17,10 @@ html {
     font-size: 26px;
     text-transform: capitalize;
     font-weight: 700;
-    padding-left: 30px;
 }
 
 #title-bar:hover{
     color: #40c9ff;
-}
-
-.navbar-item{
-    font-size: 26px;
-}
-
-a{
-    color: #ebeced;
-    text-decoration: none;   
 }
 
 .typing-effect{
@@ -590,7 +581,7 @@ h2{
 }
 
 /*footer */
-.container{
+.footer-container{
     padding: 1% 2%;
 }
 .custom-footer {

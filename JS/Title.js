@@ -1,4 +1,4 @@
-const text = "Software Developer"; 
+const text = "Software Developer "; 
 let index = 0;
 const speed = 150; 
 
