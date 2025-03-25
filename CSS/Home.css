@@ -30,8 +30,9 @@ a.nav-link{
     font-weight: 700;
 }
 
-#title-bar:hover{
+#title-bar:hover, .footer-header:hover{
     color: #40c9ff;
+    cursor: pointer;
 }
 
 /*h1 section*/
@@ -418,7 +419,7 @@ h2{
 .skills{
     text-align: center;
     background-color: #ffffff;
-    margin: 5% 0 10% 0;
+    margin: 5% 0 5% 0;
 }
 
 .skills-images{
@@ -431,7 +432,8 @@ h2{
 }
 
 .skills-images{
-    width: 90%;
+    width: 100%;
+    margin: 0 auto; 
 }
 
 .circle img{
@@ -614,6 +616,7 @@ h2{
 .footer-container{
     padding: 1% 2%;
 }
+
 .custom-footer {
     background: #0d1f3d;
     box-shadow: 0px 0px 5px #09101d;
@@ -626,25 +629,27 @@ h2{
 .footer-left {
     border-right: 1px solid #444; /* Add vertical separator */
     padding-right: 20px;
+    
 }
 
 .footer-header {
     color: white;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
+
 }
 
 .footer-nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 5px;
 }
 
 .footer-nav a {
     color: #b0b0b0;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .footer-nav a:hover {
@@ -653,32 +658,35 @@ h2{
 
 .copyright-text {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 20px;
 }
 
+/* Center the social icons */
 .footer-right {
-    text-align: right;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%;
 }
 
+/* Center individual icons */
 .social-icons {
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between icons */
 }
 
+/* Ensure the icons stay in the middle */
 .footer-logo img {
-    width: 70%;
-    transition: transform 0.3s;
+    width: 80px; /* Adjust size if necessary */
+    height: auto;
+    display: block;
 }
+
 
 .footer-logo img:hover {
     transform: scale(1.1);
-}
-
-.support-text {
-    font-size: 13px;
-    margin-top: 5px;
 }
 
 
