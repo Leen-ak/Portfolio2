@@ -127,6 +127,10 @@ a.nav-link{
     transition: all 0.2s ease-in;
   }
   
+.button-container a{
+    text-decoration: none;
+}
+
   button:hover {
     background: #af68b0;
     box-shadow: 0 0 30px 5px #af93cf;
