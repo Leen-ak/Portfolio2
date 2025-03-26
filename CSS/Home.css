@@ -39,7 +39,7 @@ a.nav-link{
 .typing-effect{
     text-align: center;
     justify-content: center;
-    margin: 2%;
+    margin: 2% 1% 2% 1%;
 }
 
 #typing-text {
@@ -63,11 +63,11 @@ a.nav-link{
 /* About Me Container Section */
 #aboutMe-container {
     position: absolute;
-    top: 52%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 72%;
-    height: 72%;
+    width: 80%;
+    height: 76%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,7 +114,7 @@ a.nav-link{
     width: 32%;
     padding: 2%;
     display: inline-block;
-    margin: 2% 4%;
+    margin: 0 4% 4% 4%;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -186,7 +186,13 @@ a.nav-link{
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  
+  .project-button.active-filter {
+    background-color: #0d1f3d;
+    box-shadow: 0 0 30px 5px #af93cf;
+    color: white;
+    transform: scale(1.1);
+}
+
 /* Card */
 .form-container{
     display: flex;
@@ -627,7 +633,7 @@ h2{
 }
 
 .footer-left {
-    border-right: 1px solid #444; /* Add vertical separator */
+    border-right: 1px solid #444; 
     padding-right: 20px;
     
 }
@@ -661,25 +667,22 @@ h2{
     font-size: 20px;
 }
 
-/* Center the social icons */
 .footer-right {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center; 
     height: 100%;
 }
 
-/* Center individual icons */
 .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between icons */
+    gap: 20px; 
 }
 
-/* Ensure the icons stay in the middle */
 .footer-logo img {
-    width: 80px; /* Adjust size if necessary */
+    width: 80px; 
     height: auto;
     display: block;
 }

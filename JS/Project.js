@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const projectSection = document.getElementById("projects-section"); 
     const projectItems = document.querySelectorAll(".project-item");
+    const allButtons = document.querySelectorAll(".project-button");
 
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function filterProjects(className) {
         if (!isInViewport(projectSection)) return; 
 
+        // Filter project items
         projectItems.forEach((item) => {
             item.classList.remove("show");
             if (className === "all") {
@@ -37,6 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     item.style.display = "none";
                 }
+            }
+        });
+
+        // Highlight active button
+        allButtons.forEach((btn) => {
+            btn.classList.remove("active-filter");
+            if (btn.textContent.trim().toLowerCase() === className.toLowerCase()) {
+                btn.classList.add("active-filter");
             }
         });
     }
