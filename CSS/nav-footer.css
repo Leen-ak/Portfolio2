@@ -90,9 +90,12 @@ a.nav-link{
 }
 
 .footer-logo img {
-    width: 80px; 
+    width: 70px; 
     height: auto;
     display: block;
+    box-shadow: 0 0 10px #e81cff, 0 0 20px #40c9ff;
+    border-radius: 50%;
+    transition: transform 0.5s;
 }
 
 .footer-logo img:hover {
