@@ -631,7 +631,10 @@ h2{
         padding: 10% 0;
     }
 
-    
+    /*Experience Section*/
+    .experience-header{
+        margin: 5% 0 18% 0;
+    }
     .timeline-container {
         width: 100%;
         height: auto;
@@ -670,5 +673,19 @@ h2{
 
     .card::before {
         width: 100%;
+    }
+
+    /*Skills section*/
+    .skills-images{
+        display: flex;
+        flex: 1 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #skill-section{
+       padding: 14% 0 14% 0;
     }
 }
