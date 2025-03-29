@@ -587,7 +587,7 @@ h2{
 /*Mobile size*/
 @media screen and (max-width: 768px){
     .typing-effect{
-        margin: 8% 1% 0% 1%;
+        margin: 10% 1% 0% 1%;
     }
 
     h2{
@@ -601,6 +601,12 @@ h2{
         width: 100%;
         margin: 0 auto;
         padding: 0 10px;
+    }
+
+    #aboutMe-container .image-section{
+        width: 100%;
+        height: auto;
+        padding: 0;
     }
 
     .image-section,
@@ -624,37 +630,45 @@ h2{
         width: 180px;
         padding: 10% 0;
     }
-    .timeline-container{
-        width: 450px;
-        height: 450px;
-        padding: 20px 10px;
-    }
 
-    .timeline {
-        padding-left: 0;
-        padding-right: 0;
+    
+    .timeline-container {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
     }
 
     .timeline::after {
-        left: 20px; 
+        left: 10px;
     }
 
     .timeline-container.left,
     .timeline-container.right {
         left: 0;
-        text-align: left;
-        padding-left: 50px;
-        padding-right: 10px;
-    }
-
-    .timeline-container.right::before,
-    .timeline-container.left::before {
-        left: 20px; 
-    }
-
-    .card{
+        transform: none; /* Reset transform */
         width: 100%;
-        height: 100%;
+        padding-left: 30px;
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    .timeline-container.left.show,
+    .timeline-container.right.show {
+        transform: none; /* Ensure animations don't shift it */
+    }
+
+    .timeline-container.left::before,
+    .timeline-container.right::before {
+        left: 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card::before {
+        width: 100%;
     }
 }
-
