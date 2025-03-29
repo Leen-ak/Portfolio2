@@ -4,7 +4,10 @@ body {
     color: #ffffff;
     margin: 0%;
     padding: 0%;
+    width: 100%;
+    overflow-x: hidden;
 }
+
 
 html {
     scroll-behavior: smooth; 
@@ -595,7 +598,9 @@ h2{
         flex-direction: column;
         align-items: center;
         max-width: 100%;
+        width: 100%;
         margin: 0 auto;
+        padding: 0 10px;
     }
 
     .image-section,
@@ -625,8 +630,6 @@ h2{
         padding: 20px 10px;
     }
 
-    
-    
     .timeline {
         padding-left: 0;
         padding-right: 0;
