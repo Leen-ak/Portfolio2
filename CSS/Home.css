@@ -649,7 +649,7 @@ h2{
     .timeline-container.left,
     .timeline-container.right {
         left: 0;
-        transform: none; /* Reset transform */
+        transform: none; 
         width: 100%;
         padding-left: 30px;
         padding-right: 10px;
@@ -658,7 +658,7 @@ h2{
 
     .timeline-container.left.show,
     .timeline-container.right.show {
-        transform: none; /* Ensure animations don't shift it */
+        transform: none; 
     }
 
     .timeline-container.left::before,
@@ -682,7 +682,7 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     #skill-section{
@@ -701,6 +701,8 @@ h2{
 
     .project-grid{
         grid-template-columns: repeat(1, 0.7fr);
+        margin-bottom: 20%;
+
     }
 
     .project-item p{
